@@ -1,0 +1,415 @@
+body{
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  color: #0B1942;
+}
+/*--------Mobile Nav-Bar----------------*/
+
+nav{
+  font-weight: 100;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #7DDFE8;
+  height: 115px;
+}
+
+.logo{
+  height: 115px;
+  width: 100px;
+  background-color: #F5005B;
+}
+.filmLogo{
+  padding: 5%;
+  height: 90%;
+  width: 90%;
+
+}
+.nav-text{
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 30%;
+  height: 100%;
+
+}
+.nav-text a{
+  text-decoration: none;
+  color: #FFF;
+
+}
+.home, .cal, .join{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+.home{
+  background-color: #00A5BF;
+}
+.cal{
+  background-color: #00B7D3;
+}
+.join{
+  background-color: #00D5E7;
+}
+/*--------tablet nav---------------*/
+@media (min-width: 545px){
+  .home, .cal, .join{
+    flex-flow: row nowrap;
+    width: 100px;
+  }
+.nav-text {
+  justify-content: flex-start;
+  height: 100%;
+margin: 0;
+flex-flow: row;
+}
+
+}
+/*---------desktop nav-------------*/
+@media (min-width: 769px){
+
+}
+/*----------mobile Footer-----------------*/
+footer{
+  font-weight: 100;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #7DDFE8;
+  align-items: center;
+  height: 182px;
+  color: #FFF;
+
+}
+footer div{
+  width: 100%;
+}
+footer a{
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+}
+footer p{
+  display: flex;
+  align-items: center;
+  flex: 2 1 100%;
+}
+/*-----------tablet Footer----------------*/
+@media (min-width: 545px){
+  footer{
+    flex-flow: row;
+    height: 115px;
+  }
+  footer a{
+    width: 100px;
+  }
+  footer p{
+    display: inline;
+    text-align: right;
+    padding-right: 15px
+  }
+}
+/*------------mobile Home-----------------*/
+
+.head-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.main-title{
+  flex: 1 1 100%;
+  font-weight: 100;
+  margin-bottom: 0px;
+  padding-left: 6%;
+}
+.head-content div{
+  flex: 1 1 100%;
+  margin: 0px 20px;
+}
+
+.sub-title{
+  background-color: #0B1942;
+  color: #FFF;
+  font-weight: 100;
+  padding: 5px 15px;
+}
+.head-content div p{
+  line-height: 1.5em;
+}
+.showing{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #0B1942;
+}
+.showing h1{
+  flex: 1 1 100%;
+  font-weight: 100;
+  color: #FFF;
+  padding-left: 25px;
+}
+.poster{
+  display: flex;
+  width: 135px;
+}
+.showing p{
+  margin: 0;
+}
+.showing  a{
+  margin: 0;
+  color: #00B7D3;
+}
+.top1, .bottom4{
+  font-size: .8em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #DCDCDC;
+  padding: 3.1%;
+  margin: 3%;
+  line-height: 1.5em;
+  flex: 1 1 100%;
+
+}
+.top1 img{
+  margin-right: 15px;
+}
+.top1 p{
+  display: flex;
+  padding-right: 43px;
+}
+.top1 h4{
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+.top-title{
+  display: flex;
+  font-size: 1.5em;
+  padding: 10px 0px;
+}
+
+.top1 ul{
+  margin: 0;
+  padding-left: 20px;
+}
+.bottom4{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+.bottom4 p{
+  line-height: 2em;
+
+}
+.pic1, .pic2, .pic3, .pic4{
+  display: flex;
+  flex-flow: column;
+  /*flex: 1 1 40%;*/
+  /*margin-bottom: 40px;*/
+}
+/*-------------tablet home--------------*/
+
+@media (min-width: 545px){
+.head-content div{
+  flex: 1 1 25%;
+  margin: 0px 20px;
+}
+.main-title{
+  padding-left: 2.5%;
+}
+.showing{
+  flex-flow: row nowrap;
+}
+.showing h1{
+  flex: 1 1 100%;
+}
+.top1 img{
+  /*height: 420px;*/
+  width: 297px;
+}
+.top-content{
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+.bottom4 {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+.bottom4 p{
+  font-size: 1.2em;
+}
+}
+
+/*------------desktop home--------------*/
+@media (min-width: 769px) {
+.showing{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.poster{
+  /*display: flex;*/
+  width: 216px;
+}
+  .top1, .bottom4{
+    font-size: .8em;
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: flex-start;
+    background-color: #DCDCDC;
+    padding: 3.1%;
+    margin: 3%;
+    line-height: 1.5em;
+    flex: 1 1 20%;
+
+  }
+  .top1{
+    /*display: flex;*/
+    flex-flow: row nowrap;
+  }
+  .bottom4 {
+    flex-flow: row wrap;
+  }
+  .pic1, .pic2, .pic3, .pic4{
+    display: flex;
+    flex-flow: column;
+  }
+  .poster {
+    height: 405px;
+    width: 215px;
+  }
+}
+/*-------------------Calendar------------*/
+
+
+
+/*------------------Join-------------------*/
+.join-content{
+  display: flex;
+  flex-flow: column wrap;
+  /*justify-content: center;*/
+  margin: 4%;
+}
+.join-content h1{
+  font-weight: 100;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.file input {
+  background: #FFF;
+  border-radius: 50%;
+}
+.picture{
+  display: flex;
+  margin: 10% auto;
+  width: 80vw;
+  border-radius: 50%;
+}
+.input div{
+  display: flex;
+  flex-direction: column;
+}
+.input input{
+  height: 28px;
+  width: 90.55555vw;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.check{
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 2.5em;
+}
+.textbox{
+  display: flex;
+  flex-flow: column;
+  margin: 4% auto;
+}
+textarea {
+  margin-top: 5px;
+  width: 90vw;
+}
+.submit{
+  text-align: center;
+  padding: 20px 15px;
+  color: #FFF;
+  background: #F5005B;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+/*----------join tablet------------------*/
+@media (min-width: 545px){
+.join-content{
+  flex-flow: row wrap;
+}
+.join-form{
+  display: flex;
+  flex-flow: row wrap;
+}
+.file{
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 35%;
+  margin-right: 5px;
+}
+.picture{
+  width: 289px;
+  margin: 9% 0;
+}
+.input{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex: 1 1 30%;
+}
+.input input {
+  width: 100%;
+}
+.check{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.check label{
+  flex: 1 1 50%;
+}
+.check p{
+  flex: 1 1 100%;
+}
+}
+/*-----------join desktop---------------*/
+@media (min-width: 769px){
+  .join-content{
+    margin: 1%;
+  }
+  .file{
+    flex: 1 1 20%;
+  }
+  .picture{
+    width: 300px;
+  }
+.check label{
+  flex: 1 1 30%;
+}
+.input{
+  flex: 1 1 50%;
+  flex-flow: row wrap;
+  height: 160px;
+}
+
+.input input{
+  width: 28vw;
+}
+.textbox{
+  flex: 1 1 100%;
+}
+textarea{
+  width: 75vw;
+}
+}
